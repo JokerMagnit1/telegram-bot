@@ -10,8 +10,8 @@ from telegram.ext import (
 )
 
 # Настройки
-TOKEN = os.environ['8098721049:AAGRrKEbOnqsAKDubJqVGX-x9R4vhcPxv_Y']
-OWNER_CHAT_ID = int(os.environ['5827840288'])
+TOKEN = os.environ["TELEGRAM_TOKEN"]
+OWNER_CHAT_ID = int(os.environ["OWNER_CHAT_ID"])
 users: dict[int, int] = {}
 
 # Flask для health-check
